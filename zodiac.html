@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script type="text/javascript" src="zodiac.js"></script>
+    <link href="zodiac.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="searchBox">
+        <input id="search" placeholder="Enter the Zodiac sign" />
+        <button onclick="searchZodiac()" class="myButton">Get your Zodiac Details</button>
+        <p class="exampleText">Example: <span class="example">gemini, virgo, libra, scorpio, sagittarius, capricorn, leo, pisces, aquarius, aries, taurus, capricorn</span></p>
+    </div>
+    <div class="textall">
+        <h1  class="headZodiac">
+            <span class="yourSign">
+                Your Zodiac sign is: 
+            </span>
+            <span id="signName" class="zodiacSign">
+                
+            </span> 
+        </h1>
+        <p>
+            <span class="details">
+                Details: 
+            </span>
+            <span id="signDetails">
+
+            </span>
+        </p>
+        <p class="errorText" id="iferror">
+            
+        </p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="userDate" placeholder="Enter the date"/>
+    <button onclick="getMonth()">Get Month</button>
+    <p>
+        <span>The month is</span>
+        <span id="displayMonth">
+
+        </span>
+    </p>
+
+    <script>
+        
+        function getMonth(){
+            var myDate = document.getElementById("userDate").value; //14/1/12
+            console.log(myDate);
+            var dateArr = myDate.split("/"); //[14,1,12]
+            //console.log()
+            var monthArr = {
+                1: "Jan",
+                2: "Feb",
+                3: "Mar",
+                4: "Apr",
+                5: "May"
+            }
+            console.log("the month is: "+monthArr[dateArr[1]]);
+            document.getElementById("displayMonth").innerHTML = monthArr[dateArr[1]];
+        }
+    
+    /*var monnth = sign.split("/");
+    var monthArr ={
+        1: January,
+        2: February,
+        3: March,
+        4: April
+        ...
+    }
+    document.getElemnetbyid("paragraph").innerHtml = "Month is:"+month[month[1]];*/
+    </script>
+    
+</body>
+</html>
